@@ -8,10 +8,10 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/g0xilla/school-projects/NXPCup/NXPCup/include",
-                "/home/g0xilla/school-projects/NXPCup/NXPCup/src",
+                "/home/g0xilla/school-projects/NXPCup/include",
+                "/home/g0xilla/school-projects/NXPCup/src",
                 "/home/g0xilla/.platformio/packages/framework-mbed",
-                "/home/g0xilla/school-projects/NXPCup/NXPCup/.pio/build/frdm_k64f",
+                "/home/g0xilla/school-projects/NXPCup/.pio/build/frdm_k64f",
                 "/home/g0xilla/.platformio/packages/framework-mbed/cmsis",
                 "/home/g0xilla/.platformio/packages/framework-mbed/cmsis/CMSIS_5",
                 "/home/g0xilla/.platformio/packages/framework-mbed/cmsis/CMSIS_5/CMSIS",
@@ -127,10 +127,10 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/g0xilla/school-projects/NXPCup/NXPCup/include",
-                    "/home/g0xilla/school-projects/NXPCup/NXPCup/src",
+                    "/home/g0xilla/school-projects/NXPCup/include",
+                    "/home/g0xilla/school-projects/NXPCup/src",
                     "/home/g0xilla/.platformio/packages/framework-mbed",
-                    "/home/g0xilla/school-projects/NXPCup/NXPCup/.pio/build/frdm_k64f",
+                    "/home/g0xilla/school-projects/NXPCup/.pio/build/frdm_k64f",
                     "/home/g0xilla/.platformio/packages/framework-mbed/cmsis",
                     "/home/g0xilla/.platformio/packages/framework-mbed/cmsis/CMSIS_5",
                     "/home/g0xilla/.platformio/packages/framework-mbed/cmsis/CMSIS_5/CMSIS",
@@ -314,7 +314,7 @@
             "cStandard": "gnu11",
             "cppStandard": "gnu++14",
             "forcedInclude": [
-                "/home/g0xilla/school-projects/NXPCup/NXPCup/.pio/build/frdm_k64f/mbed_config.h",
+                "/home/g0xilla/school-projects/NXPCup/.pio/build/frdm_k64f/mbed_config.h",
                 ""
             ],
             "compilerPath": "/home/g0xilla/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc",
