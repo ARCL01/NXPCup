@@ -6,7 +6,7 @@
 #define _LINK2I2C_H
 
 #include "mbed.h"
-#include <cstdint>
+#include "DefaultSerial.h"
 
 #define PIXY_I2C_DEFAULT_ADDR           0x54
 #define PIXY_DEFAULT_ARGVAL             0x80000000
@@ -45,13 +45,18 @@ public:
             *cs = 0;
         
         // Mbed i2c.read očekává 8-bitovou adresu posunutou o bit doleva 
-        result = m_i2c.read(m_addr << 1, (char*)buf, len);
+        if(len !=0) {
+
+            result = m_i2c.read(m_addr << 1, (char*)buf, len);
+        } else {
+            return len;
+        }
         
         if (result != 0)
         {
             return PIXY_RESULT_ERROR; // Chyba komunikace
         }
-        
+
         // Výpočet kontrolního součtu, pokud je požadován
         if (cs)
         {
@@ -78,7 +83,11 @@ public:
                 packet = PIXY_I2C_MAX_SEND;
             
             // Mbed i2c.write očekává 8-bitovou adresu posunutou o bit doleva
-            result = m_i2c.write(m_addr << 1, (const char*)(buf + i), packet);
+            if(len!=0) {
+                result = m_i2c.write(m_addr << 1, (const char*)(buf + i), packet);
+            } else {
+                return len;
+            }
             
             if (result != 0)
             {
